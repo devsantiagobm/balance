@@ -1,0 +1,19 @@
+@use '../assets/assets.scss' as *;
+
+body{
+    font-family: $font;
+    font-size: $size;
+    font-weight: $regular;
+    background-color: $cream;
+    color: $dark-brown;
+    display: flex;
+    min-height: 100vh;
+}
+
+.main{
+    width: clamp(400px, 30vw, 500px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

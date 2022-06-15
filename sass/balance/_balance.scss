@@ -1,0 +1,30 @@
+@use '../assets/assets.scss' as *;
+
+.balance{
+    background-color: $soft;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $very-pale-orange;
+    padding: $pad;
+    border-radius: $br;
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        gap: 8px;
+    }
+    &__text{
+        font-size: 12px;
+    }
+
+    &__cash{
+        font-size: 22px;
+    }
+
+    &__img{
+        width: clamp(50px, 3.5vw, 60px);
+    }
+
+}

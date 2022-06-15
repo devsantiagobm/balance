@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="public/style.css">
+    <script src="public/script.js"
+            defer
+            type="module"></script>
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="balance">
+            <div class="balance__info">
+                <span class="balance__text">My balance</span>
+                <h1 class="balance__cash">$921.48</h1>
+            </div>
+            <div>
+                <img src="images/logo.svg"
+                     alt=""
+                     class="balance__img">
+            </div>
+        </div>
+        <div class="spent">
+            <h2 class="spent__title">Spending - Last 7 days</h2>
+            <div class="spent__graphic">
+                <ul class="spent__list spent__list--rect">
+                    <li class="spent__rect"><span class="spent__data"></span></li>
+                    <li class="spent__rect"><span class="spent__data"></span></li>
+                    <li class="spent__rect"><span class="spent__data"></span></li>
+                    <li class="spent__rect"><span class="spent__data"></span></li>
+                    <li class="spent__rect"><span class="spent__data"></span></li>
+                    <li class="spent__rect"><span class="spent__data"></span></li>
+                    <li class="spent__rect"><span class="spent__data"></span></li>
+                </ul>
+                <ul class="spent__list spent__list--days">
+                    <li class="spent__days"></li>
+                    <li class="spent__days"></li>
+                    <li class="spent__days"></li>
+                    <li class="spent__days"></li>
+                    <li class="spent__days"></li>
+                    <li class="spent__days"></li>
+                    <li class="spent__days"></li>
+                </ul>
+            </div>
+            <div class="spent__info">
+                <div class="spent__amount">
+                    <span class="spent__total">Total this month</span>
+                    <h3 class="spent__cash">$478.33</h3>
+                </div>
+                <div class="spent__porcen">
+                    <span class="spent__profit">+2.4%</span>
+                    <span class="spent__last">from last month</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+</body>
+
+</html>

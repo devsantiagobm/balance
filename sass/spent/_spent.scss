@@ -1,0 +1,113 @@
+@use '../assets/assets.scss' as *;
+
+.spent{
+    background-color: $very-pale-orange;
+    padding: 28px;
+    border-radius: $br;
+    
+    &__title{
+        font-size: 22px;
+    }
+
+    &__graphic{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 0 24px;
+        margin: 0 0 24px;
+        border-bottom: 1px solid $cream;
+    }
+    
+    &__list{
+        --gap: 16px;
+        display: flex;
+        justify-content: space-between;
+        gap: var(--gap);
+        &--rect{
+            min-height: 150px;
+            margin: 24px 0 0;
+            align-items: flex-end;
+        }
+    }
+
+    &__rect{
+        display: block;
+        background-color: $soft;
+        width: 100%;
+        position: relative;
+        border-radius: calc($br - 8px);
+        transition: filter .3s ease;
+        cursor: pointer;
+        &:nth-child(3){
+            background-color: $cyan;
+        }
+        &:hover{
+            filter: brightness(110%);
+        }
+
+        &:hover .spent__data{
+            opacity: 1;
+        }
+    }
+
+    &__data{
+        user-select: none;
+        opacity: 0;
+        display: grid;
+        place-items: center;
+        padding: 6px 0;
+        position: absolute;
+        left: 50%;
+        top: calc(0% - 35px);
+        border-radius: 4px;
+        background-color: $dark-brown;
+        color: $very-pale-orange;
+        width: 150%;
+        font-size: 14px;
+        transform: translateX(-50%);
+        letter-spacing: -1px;
+        transition: opacity .3s ease;
+    }
+
+    &__days{
+        display: grid;
+        place-items: center;
+        width: 100%;
+        font-size: 14px;
+        color: $medium-brown;
+    }
+
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__total{
+        font-size: 14px;
+        color: $medium-brown;
+    }
+
+    &__cash{
+        font-size: 38px;
+        margin: 4px 0 0;
+    }
+
+    &__porcen{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        padding: 24px 0 0;
+    }
+
+    &__profit{
+        font-weight: $bold;
+        font-size: 16px;
+    }
+
+    &__last{
+        color: $medium-brown;
+        font-size: 16px;
+        margin: 4px 0 0;
+    }
+}
